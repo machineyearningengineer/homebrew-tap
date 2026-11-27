@@ -2,9 +2,9 @@ cask "job-harness-desktop" do
   arch arm: "aarch64", intel: "x86_64"
 
   # Version and checksums are rewritten by job-harness's release workflow.
-  version "0.4.0"
-  sha256 arm:   "d3df6980a938a7f5d6f7abb04a01af8993d2499accb458cb6c452f691ece9b40", # aarch64-apple-darwin
-         intel: "58489526b10d60ac402e44ec151b02dbc98a7ffd03d34f716ab935c6958ceb61"  # x86_64-apple-darwin
+  version "0.4.2"
+  sha256 arm:   "4d069af05dab065948e7a25795377179a481260e79b7729636ad102869a71a06", # aarch64-apple-darwin
+         intel: "896536ba95be4dc7374b8cc333ffffb16c649805cccfe6eb3a6fc518760e9b4e"  # x86_64-apple-darwin
 
   url "https://github.com/machineyearningengineer/job-harness/releases/download/v#{version}/Job-Harness-v#{version}-#{arch}-apple-darwin.app.zip"
   name "Job Harness"
