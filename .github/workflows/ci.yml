@@ -17,3 +17,7 @@ jobs:
         run: brew install --build-from-source machineyearningengineer/tap/rdrop
       - name: Test formula
         run: brew test machineyearningengineer/tap/rdrop
+      - name: Install and test job-harness (prebuilt)
+        run: |
+          brew install machineyearningengineer/tap/job-harness
+          brew test machineyearningengineer/tap/job-harness
