@@ -23,6 +23,6 @@ jobs:
           brew test machineyearningengineer/tap/job-harness
       - name: Install job-harness desktop cask
         run: |
-          brew install --cask machineyearningengineer/tap/job-harness
+          brew install --cask machineyearningengineer/tap/job-harness-desktop
           test -x "/Applications/Job Harness.app/Contents/MacOS/job-harness-desktop"
           "/Applications/Job Harness.app/Contents/MacOS/job-harness-desktop" --version

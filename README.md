@@ -20,7 +20,7 @@ brew upgrade rdrop
 
 ```bash
 brew install machineyearningengineer/tap/job-harness          # jh CLI (macOS and Linux)
-brew install --cask machineyearningengineer/tap/job-harness   # desktop app (macOS)
+brew install --cask machineyearningengineer/tap/job-harness-desktop   # desktop app (macOS)
 ```
 
 The desktop app is not signed with an Apple Developer ID. The first time, right-click it in
@@ -31,7 +31,7 @@ The desktop app is not signed with an Apple Developer ID. The first time, right-
 | Name | Type | Description |
 | --- | --- | --- |
 | `rdrop` | Formula | Find, review and organize Raindrop bookmarks from a shell or agent |
-| `job-harness` | Cask | Job Harness desktop app (macOS, unsigned) |
+| `job-harness-desktop` | Cask | Job Harness desktop app (macOS, unsigned) |
 | `job-harness` | Formula | Local-first job search ledger and MCP server; installs `jh` and `job-harness` from prebuilt release binaries |
 
 ## Maintenance
@@ -39,7 +39,7 @@ The desktop app is not signed with an Apple Developer ID. The first time, right-
 Formula files live in `Formula/`, casks in `Casks/`.
 
 `job-harness` needs no manual bumps: its release workflow rewrites `version` and every
-`sha256 "..." # <target>` line in `Formula/job-harness.rb` (and `Casks/job-harness.rb`)
+`sha256 "..." # <target>` line in `Formula/job-harness.rb` (and `Casks/job-harness-desktop.rb`)
 from the release's `SHA256SUMS`, then pushes to `main` with a deploy key scoped to this
 repository. Keep the trailing `# <target>` comments; they are how it finds each checksum.
 

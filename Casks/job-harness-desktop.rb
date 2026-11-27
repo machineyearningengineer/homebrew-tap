@@ -1,4 +1,4 @@
-cask "job-harness" do
+cask "job-harness-desktop" do
   arch arm: "aarch64", intel: "x86_64"
 
   # Version and checksums are rewritten by job-harness's release workflow.
