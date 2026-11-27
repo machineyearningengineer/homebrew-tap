@@ -19,14 +19,19 @@ brew upgrade rdrop
 ## Install `job-harness`
 
 ```bash
-brew install machineyearningengineer/tap/job-harness   # jh CLI (macOS and Linux)
+brew install machineyearningengineer/tap/job-harness          # jh CLI (macOS and Linux)
+brew install --cask machineyearningengineer/tap/job-harness   # desktop app (macOS)
 ```
+
+The desktop app is not signed with an Apple Developer ID. The first time, right-click it in
+/Applications and choose Open, or run `xattr -d com.apple.quarantine "/Applications/Job Harness.app"`.
 
 ## Formulae and casks
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `rdrop` | Formula | Find, review and organize Raindrop bookmarks from a shell or agent |
+| `job-harness` | Cask | Job Harness desktop app (macOS, unsigned) |
 | `job-harness` | Formula | Local-first job search ledger and MCP server; installs `jh` and `job-harness` from prebuilt release binaries |
 
 ## Maintenance
