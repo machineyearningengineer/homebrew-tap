@@ -2,28 +2,28 @@ class JobHarness < Formula
   desc "Local-first job search ledger, application tracker and MCP server for AI agents"
   homepage "https://github.com/machineyearningengineer/job-harness"
   # Version and checksums are rewritten by job-harness's release workflow.
-  version "0.5.3"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/machineyearningengineer/job-harness/releases/download/v#{version}/job-harness-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "8e809f7cec7dcc6b2833780639c24cdd15c5a26427423262590f83cc2d2fbc88" # aarch64-apple-darwin
+      sha256 "3fc7d48c18e1ad1c9c5dfdd972a8ebf68d2cebc077ac87e90383a3d3305357f7" # aarch64-apple-darwin
     end
     on_intel do
       url "https://github.com/machineyearningengineer/job-harness/releases/download/v#{version}/job-harness-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "00ac7dc938192d800806bc2f6f5629281319c2fa56bbed8252ee647bcdf3db19" # x86_64-apple-darwin
+      sha256 "e9a593f97ac799241badf7104f238b7f8cb4466d501406b25f561e64befc400f" # x86_64-apple-darwin
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/machineyearningengineer/job-harness/releases/download/v#{version}/job-harness-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "307e8c1b7c9df851764b534c997d4ebc83db36680cff192d3dbcb5e655cc4437" # aarch64-unknown-linux-gnu
+      sha256 "c3e212bb2f11f477e1b681e62aae4791bd03474a714e56152e44f3e0bddedda7" # aarch64-unknown-linux-gnu
     end
     on_intel do
       url "https://github.com/machineyearningengineer/job-harness/releases/download/v#{version}/job-harness-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "56d956262d059f102054d08bfb996b16fc7b070ab653d60ecbb47141d8f8e6e2" # x86_64-unknown-linux-gnu
+      sha256 "c1a904c26e479036b76d2eaa803c3ce7eaeaa596c46e35542f7f39158d632096" # x86_64-unknown-linux-gnu
     end
   end
 
